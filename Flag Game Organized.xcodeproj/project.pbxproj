@@ -6,14 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D5A1B84B2D2D853A009A503E /* Flag_Game_OrganizedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A1B84A2D2D853A009A503E /* Flag_Game_OrganizedApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		D5A1B8472D2D853A009A503E /* Flag Game Organized.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flag Game Organized.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A1B84A2D2D853A009A503E /* Flag_Game_OrganizedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag_Game_OrganizedApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D5A1B8492D2D853A009A503E /* Flag Game Organized */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Flag Game Organized";
+			sourceTree = "<group>";
+		};
+		D5A1B8602D2D86F3009A503E /* models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -33,6 +43,8 @@
 			isa = PBXGroup;
 			children = (
 				D5A1B8492D2D853A009A503E /* Flag Game Organized */,
+				D5A1B84A2D2D853A009A503E /* Flag_Game_OrganizedApp.swift */,
+				D5A1B8602D2D86F3009A503E /* models */,
 				D5A1B8482D2D853A009A503E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +74,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				D5A1B8492D2D853A009A503E /* Flag Game Organized */,
+				D5A1B8602D2D86F3009A503E /* models */,
 			);
 			name = "Flag Game Organized";
 			packageProductDependencies = (
@@ -119,6 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5A1B84B2D2D853A009A503E /* Flag_Game_OrganizedApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
