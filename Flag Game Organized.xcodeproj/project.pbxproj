@@ -21,11 +21,6 @@
 			path = "Flag Game Organized";
 			sourceTree = "<group>";
 		};
-		D5A1B8602D2D86F3009A503E /* models */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = models;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +39,6 @@
 			children = (
 				D5A1B8492D2D853A009A503E /* Flag Game Organized */,
 				D5A1B84A2D2D853A009A503E /* Flag_Game_OrganizedApp.swift */,
-				D5A1B8602D2D86F3009A503E /* models */,
 				D5A1B8482D2D853A009A503E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,7 +68,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				D5A1B8492D2D853A009A503E /* Flag Game Organized */,
-				D5A1B8602D2D86F3009A503E /* models */,
 			);
 			name = "Flag Game Organized";
 			packageProductDependencies = (
