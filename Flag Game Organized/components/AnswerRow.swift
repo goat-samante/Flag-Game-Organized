@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct AnswerRow: View {
+    @EnvironmentObject var gameManager: GameManager
     var answer: Answer
     @State private var isSelected = false
     var body: some View {
-        HStack(spacing: 20, content: {
+        HStack(spacing: 20) {
             Image(systemName: "Circle Fill")
                 .font(.caption)
             Text(answer.text)
@@ -21,14 +22,17 @@ struct AnswerRow: View {
                 Image(systemName: answer.isCorrect ? "Checkmark.circle.fill" : "x.circle.fill")
                     .foregroundColor(answer.isCorrect ? .green : .red)
             }
-        })
+        }
         .padding()
         .frame(width: 300, alignment: .leading)
         .background(.white)
         .cornerRadius(10)
         .shadow(color: isSelected ? (answer.isCorrect ? .green : .red) : .gray, radius: 5, x: 0.5, y: 0.5)
         .onTapGesture {
-            isSelected = true
+            if !gameManager.answerSelected {
+                isSelected = true
+                gameManager.selectAnswer(answer: answer)
+            }
         }
     }
 }
